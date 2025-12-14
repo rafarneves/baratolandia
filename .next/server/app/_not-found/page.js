@@ -1,0 +1,13 @@
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/_not-found/page.js")
+R.c("server/chunks/ssr/baratolandia-group-website_baratolandia-group-website_fab11224._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__a9f98063._.js")
+R.c("server/chunks/ssr/8197b_next_dist_esm_build_templates_app-page_97830fa1.js")
+R.c("server/chunks/ssr/[root-of-the-server]__d3b88b45._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__2ddbc1f1._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__e229e3e2._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__9d21a178._.js")
+R.c("server/chunks/ssr/8197b_next_dist_client_components_c42221fd._.js")
+R.c("server/chunks/ssr/8197b_next_dist_client_components_builtin_forbidden_db8db902.js")
+R.c("server/chunks/ssr/6c5c9_olandia-group-website__next-internal_server_app__not-found_page_actions_c88ce126.js")
+R.m(50446)
+module.exports=R.m(50446).exports
