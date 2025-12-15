@@ -28,7 +28,7 @@ const stores = [
   { name: "Carrefour", imgUrl: "/carrefour.png" },
   { name: "Netshoes", imgUrl: "/Novo_Logo_Netshoes.png" },
   { name: "Centauro", imgUrl: "/centauro-logo-01.png" },
-  { name: "Casas Bahia", imgUrl: "/CB.png" },
+  { name: "Casas Bahia", imgUrl: "/CB.png", link: "https://tidd.ly/4pL57E8" },
   { name: "Electrolux", imgUrl: "/eletrolux.png" },
   { name: "LG", imgUrl: "/lg.png", link: "https://tidd.ly/4aNite6" },
   { name: "Samsung", imgUrl: "/samsung.png" },
