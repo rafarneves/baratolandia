@@ -11,6 +11,30 @@ import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 
+const stores = [
+  { name: "Magazine Luiza", imgUrl: "/magazine-luiza-logo.png", link: "https://www.magazinevoce.com.br/magazinein_3131981/" },
+  { name: "Amazon", imgUrl: "/amazon-logo.png", link: "https://amzn.to/44r0mXy" },
+  { name: "Mercado Livre", imgUrl: "/Logotipo_MercadoLivre.png", link: "https://mercadolivre.com/sec/1Dm1jpZ" },
+  { name: "Shopee", imgUrl: "/shopee-logo.png", link: "https://s.shopee.com.br/10vsVxrBiW" },
+  { name: "AliExpress", imgUrl: "/aliexpress-logo.png", link: "https://s.click.aliexpress.com/e/_c4nXNiqN" },
+  { name: "Shein", imgUrl: "/shein.png" },
+  {
+    name: "Temu",
+    imgUrl: "/temu-logo_brandlogos.net_shd2g-512x512.png",
+  },
+  { name: "Adidas", imgUrl: "/Adidas-Logo.wine.png", link: "https://tidd.ly/48QMlUq" },
+  { name: "Nike", imgUrl: "/Nike-Logo.png", link: "https://tidd.ly/4qc4W4l" },
+  { name: "Americanas", imgUrl: "/americanas-logo-1.png" },
+  { name: "Carrefour", imgUrl: "/carrefour.png" },
+  { name: "Netshoes", imgUrl: "/Novo_Logo_Netshoes.png" },
+  { name: "Centauro", imgUrl: "/centauro-logo-01.png" },
+  { name: "Casas Bahia", imgUrl: "/CB.png" },
+  { name: "Electrolux", imgUrl: "/eletrolux.png" },
+  { name: "LG", imgUrl: "/lg.png", link: "https://tidd.ly/4aNite6" },
+  { name: "Samsung", imgUrl: "/samsung.png" },
+  { name: "Drogaria São Paulo", imgUrl: "/drogasaopaulo.png" },
+];
+
 export default function BaratolandiaPage() {
   const whatsappLink = "https://chat.whatsapp.com/Lv3qJAZw3pK3se9RJcSwxG";
   // Troque pelo link do seu canal/grupo no Telegram
@@ -20,7 +44,7 @@ export default function BaratolandiaPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-primary px-4 py-16 sm:px-6 sm:py-20 md:py-32 text-center overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[4rem_4rem]" />
         <div className="relative max-w-4xl mx-auto">
           <div className="mb-8 flex justify-center">
             <Image
@@ -157,9 +181,9 @@ export default function BaratolandiaPage() {
                 icon: TrendingDown,
                 text: "Quem quer pagar mais barato nas coisas do dia a dia",
               },
-            ].map((item, i) => (
+            ].map((item) => (
               <div
-                key={i}
+                key={item.text}
                 className="flex items-center gap-4 bg-card border border-border rounded-xl p-6 hover:border-primary transition-colors"
               >
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
@@ -207,42 +231,39 @@ export default function BaratolandiaPage() {
             Receba ofertas das principais lojas do Brasil e do mundo!
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-8">
-            {[
-              { name: "Magazine Luiza", url: "/magazine-luiza-logo.png" },
-              { name: "Amazon", url: "/amazon-logo.png" },
-              { name: "Mercado Livre", url: "/Logotipo_MercadoLivre.png" },
-              { name: "Shopee", url: "/shopee-logo.png" },
-              { name: "AliExpress", url: "/aliexpress-logo.png" },
-              { name: "Shein", url: "/shein.png" },
-              {
-                name: "Temu",
-                url: "/temu-logo_brandlogos.net_shd2g-512x512.png",
-              },
-              { name: "Adidas", url: "/Adidas-Logo.wine.png" },
-              { name: "Nike", url: "/Nike-Logo.png" },
-              { name: "Americanas", url: "/americanas-logo-1.png" },
-              { name: "Carrefour", url: "/carrefour.png" },
-              { name: "Netshoes", url: "/Novo_Logo_Netshoes.png" },
-              { name: "Centauro", url: "/centauro-logo-01.png" },
-              { name: "Casas Bahia", url: "/CB.png" },
-              { name: "Electrolux", url: "/eletrolux.png" },
-              { name: "LG", url: "/lg.png" },
-              { name: "Samsung", url: "/samsung.png" },
-              { name: "Drogaria São Paulo", url: "/drogasaopaulo.png" },
-            ].map((store, i) => (
-              <div
-                key={i}
-                className="bg-card border border-border rounded-xl p-4 md:p-6 flex items-center justify-center hover:border-primary transition-colors hover:shadow-md"
-              >
+            {stores.map((store) => {
+              const image = (
                 <Image
-                  src={store.url || "/placeholder.svg"}
+                  src={store.imgUrl || "/placeholder.svg"}
                   alt={`Logo ${store.name}`}
                   width={160}
                   height={80}
                   className="w-full h-auto object-contain max-h-12 md:max-h-16"
                 />
-              </div>
-            ))}
+              );
+
+              return (
+                <div
+                  key={store.name}
+                  className="bg-card border border-border rounded-xl p-4 md:p-6 flex items-center justify-center hover:border-primary transition-colors hover:shadow-md"
+                >
+                  {store.link ? (
+                    <a
+                      href={store.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Abrir ${store.name}`}
+                      title={`Abrir ${store.name}`}
+                      className="w-full h-full flex items-center justify-center rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                    >
+                      {image}
+                    </a>
+                  ) : (
+                    image
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
