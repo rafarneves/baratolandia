@@ -2,20 +2,20 @@
   "devFiles": [],
   "ampDevFiles": [],
   "polyfillFiles": [
-    "static/chunks/8197b_next_dist_build_polyfills_polyfill-nomodule.js"
+    "static/chunks/c082b_next_dist_build_polyfills_polyfill-nomodule.js"
   ],
   "lowPriorityFiles": [],
   "rootMainFiles": [
-    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_6865e773._.js",
-    "static/chunks/8197b_next_dist_compiled_react-dom_0529a4b2._.js",
-    "static/chunks/8197b_next_dist_compiled_react-server-dom-turbopack_cdc26c4d._.js",
-    "static/chunks/8197b_next_dist_compiled_next-devtools_index_9c9f2969.js",
-    "static/chunks/8197b_next_dist_compiled_58616931._.js",
-    "static/chunks/8197b_next_dist_client_b33d8157._.js",
-    "static/chunks/8197b_next_dist_d3ba58d9._.js",
-    "static/chunks/8197b_@swc_helpers_cjs_f6c474db._.js",
-    "static/chunks/baratolandia-group-website_baratolandia-group-website_a0ff3932._.js",
-    "static/chunks/turbopack-baratolandia-group-website_baratolandia-group-website_2de013e3._.js"
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_6af1fb20._.js",
+    "static/chunks/c082b_next_dist_compiled_react-dom_7007e012._.js",
+    "static/chunks/c082b_next_dist_compiled_react-server-dom-turbopack_4bd1443b._.js",
+    "static/chunks/c082b_next_dist_compiled_next-devtools_index_b4e0390e.js",
+    "static/chunks/c082b_next_dist_compiled_9c950b3d._.js",
+    "static/chunks/c082b_next_dist_client_a0b86910._.js",
+    "static/chunks/c082b_next_dist_32ac9046._.js",
+    "static/chunks/c082b_@swc_helpers_cjs_7acd4db1._.js",
+    "static/chunks/Projetos_baratolandia_a0ff3932._.js",
+    "static/chunks/turbopack-Projetos_baratolandia_31b6ef17._.js"
   ],
   "pages": {},
   "ampFirstPages": []
